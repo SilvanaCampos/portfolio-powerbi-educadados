@@ -38,7 +38,7 @@ Portfólio de estudos, exercícios, desafios e projetos desenvolvidos durante a 
 <table>
 <tr>
 <td align="center">
-<a href="./01-fundamentos-power-bi/README.md">
+<a href="./01-fundamentos-power-bi/">
 <img src="./assets/modulo-01-powerbi.png" width="220"><br>
 <b>Módulo 01</b><br>
 Fundamentos do Power BI
