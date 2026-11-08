@@ -24,7 +24,7 @@ A atividade teve como foco a transformação de uma base transacional em um mode
 |----------|----------|
 | Desafio_Modelagem.pbix | Arquivo Power BI contendo o modelo dimensional desenvolvido |
 | Base_Modelagem.xlsx | Base de dados utilizada no desafio |
-| modelo-relacionamentos.png | Visualização do modelo dimensional e relacionamentos criados |
+| modelo-relacionamentos.jpg | Visualização do modelo dimensional e relacionamentos criados |
 
 ---
 
@@ -123,7 +123,7 @@ Foram criados e validados os relacionamentos entre a tabela fato e as tabelas di
 
 A imagem abaixo apresenta a estrutura final do modelo criado no Power BI.
 
-./modelo-relacionamentos.png
+./modelo-relacionamentos.jpg
 
 
 ## 🚀 Competências Demonstradas
