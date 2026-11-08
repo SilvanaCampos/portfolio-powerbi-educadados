@@ -2,7 +2,7 @@
 
 ## Desafio Transformação e Preparação de Dados
 
-## 📖 Visão Geral
+## 📖 Sobre o Desafio Técnico
 
 Desafio técnico desenvolvido durante o **Módulo 02 - Power Query Básico** da Formação Analista de Dados da Educadados.
 
@@ -11,17 +11,25 @@ O desafio teve como objetivo aplicar técnicas de preparação, transformação 
 A solução envolveu padronização de bases, tratamento de inconsistências, enriquecimento de dados e transformação de estruturas para análise.
 
 
-## 🎯 Objetivos do Desafio
+## 🎯 Objetivos do Desafio Técnico
 
 Prepara e consolidar diferentes fontes de dados em uma estrutura analítica consistente, aplicando recursos fundamentais do Power Query para tratamento, integração e organização dos dados.
 
-## 🛠️ Tecnologia Utilizadas 
+## 🛠️ Tecnologias Utilizadas 
 
 - Power BI Desktop
 - Power Query
 - Microsoft Excel
 
-## 📊 Base de Daods
+## 📁 Arquivos do Repositório
+
+| Arquivo | Descrição |
+|----------|----------|
+| Desafio_PowerQuery_Basico.pbix | Arquivo Power BI contendo todas as etapas de transformação desenvolvidas no desafio |
+| Desafio_Tecnico_PowerQuery.xlsx | Base de dados utilizada no desafio |
+| resultado-transformacoes-power-query.png | Evidência visual do resultado das transformações realizadas |
+
+## 📊 Base de Dados
 
 O desafio utilizou o arquivo: **Desafio_Tecnico_PowerQuery.xlsx**
 
@@ -105,7 +113,8 @@ A imagem abaixo apresenta a base consolidada após os processos de limpeza, inte
 
 **Silvana Campos**
 
-Projeto desenvolvido durante a formação **Educadados** como parte da trilha de aprendizado em Power BI, Power Query e Análise de Dados.
+Desafio técnico desenvolvido durante a formação **Educadados**, compondo meu portfólio de projetos em Power BI, Power Query, Modelagem e Business Intelligence.
+
 
 ---
 
