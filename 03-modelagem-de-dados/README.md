@@ -121,7 +121,7 @@ Foram criados e validados os relacionamentos entre a tabela fato e as tabelas di
 
 ## 📸 Modelo Dimensional
 
-A imagem abaixo apresenta a estrutura final do modelo criado no Power BI.
+A imagem abaixo apresenta a estrutura final do modelo dimensional criado no Power BI.
 
 ![Modelo Dimensional](./modelo-relacionamentos.jpg)
 
