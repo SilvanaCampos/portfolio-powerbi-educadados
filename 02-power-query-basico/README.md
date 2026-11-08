@@ -1,7 +1,5 @@
 # 🔄 Módulo 02 | Power Query Básico 
 
-## Desafio Transformação e Preparação de Dados
-
 ## 📖 Sobre o Desafio Técnico
 
 Desafio técnico desenvolvido durante o **Módulo 02 - Power Query Básico** da Formação Analista de Dados da Educadados.
