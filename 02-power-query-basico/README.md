@@ -72,7 +72,7 @@ As tabelas de vendas foram consolidadas por meio de operações de Append. Em se
 ### Transformação de Colunas
 
 Separação da coluna **cidade_estado** em: Cidade; Estado.
-
+ 
 ### Integração de Dados (Merge)
 
 Relacionamento entre as tabelas de vendas e clientes utilizando a chave **id_cliente**.
