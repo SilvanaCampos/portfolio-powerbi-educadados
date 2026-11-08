@@ -27,7 +27,7 @@ Prepara e consolidar diferentes fontes de dados em uma estrutura analítica cons
 |----------|----------|
 | Desafio_PowerQuery_Basico.pbix | Arquivo Power BI contendo todas as etapas de transformação desenvolvidas no desafio |
 | Desafio_Tecnico_PowerQuery.xlsx | Base de dados utilizada no desafio |
-| resultado-transformacoes-power-query.png | Evidência visual do resultado das transformações realizadas |
+| resultado-transformacoes-power-query.png | Evidência visual do resultado das transformações |
 
 ## 📊 Base de Dados
 
