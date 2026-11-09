@@ -18,7 +18,7 @@ Trata-se de um projeto introdutório voltado para consolidar os conceitos fundam
 - Construir visualizações interativas.
 - Organizar informações em um dashboard.
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias
 
 - Power BI Desktop
 - Power Query
