@@ -5,145 +5,110 @@
 
 Desafio técnico desenvolvido durante o **Módulo 03 - Modelagem de Dados** da Formação de Analista de Dados da Educadados.
 
-O objetivo foi estruturar um modelo de dados adequado para análise em Power BI, aplicando conceitos de modelagem dimensional, criação de tabelas fato e dimensão, construção de relacionamentos e organização de atributos analíticos.
-
-A atividade teve como foco a transformação de uma base transacional em um modelo preparado para análises e desenvolvimento de dashboards.
+**Objetivo:** transformar uma base transacional de clientes, produtos e vendas em um modelo dimensional (Star Schema) pronto para análises e dashboards no Power BI.
 
 
-## 🛠️ Tecnologias Utilizadas
+
+## 🛠️ Tecnologias
 
 -Power BI Desktop
 - Power Query
+- DAX
 - Modelagem Dimensional
 
 
 
-## 📁 Arquivos Disponíveis
+## 📁 Arquivos 
 
 | Arquivo | Descrição |
 |----------|----------|
 | Desafio_Modelagem.pbix | Arquivo Power BI contendo o modelo dimensional desenvolvido |
 | Base_Modelagem.xlsx | Base de dados utilizada no desafio |
-| modelo-relacionamentos.jpg | Visualização do modelo dimensional e relacionamentos criados |
+| modelo-relacionamentos.jpg | imagem do modelo dimensional e dos relacionamentos criados |
 
 ---
 
-## 📊 Base de Dados
+## 📸 Modelo Dimensional
 
-Foi disponibilizada uma base transacional para o desafio, contendo informações de clientes, produtos e vendas.
-
-A partir dessa base, foi realizada a construção de um modelo dimensional seguindo boas práticas de Business Intelligence, incluindo a criação de novas dimensões e a definição dos relacionamentos necessários para análise dos dados.
+![Modelo Dimensional](./modelo-relacionamentos.jpg)
 
 
 ## 🏗️ Estrutura do Modelo
-O modelo foi organizado utilizando o conceito de Star Schema (Modelo Estrela), tendo uma tabela fato central conectada a tabelas dimensão responsáveis pelos atributos analíticos.
+
+O modelo segue o **Star Schema (Modelo Estrela)**: uma tabela fato central conectada a tabelas dimensão.
 
 ### Tabela Fato
 
-#### fVenda
 
-Tabela central responsável pelo registro das transações de vendas, contendo informações relacionadas a:
+**fVendas** registra as transações de vendas, com informações de clientes, produtos, vendedores, canal de venda, datas, valores e quantidades.
 
-- Vendas;
-- Clientes;
-- Produtos;
-- Vendedores;
-- Canal de venda;
-- Datas;
-- Valores e quantidades.
 
-## 📚 Dimensões Criadas
+## 📚 Dimensões
 
-| Dimensão | Finalidade |
-|-----------|-----------|
-| dClientes | Armazena informações cadastrais dos clientes utilizadas em análises de segmentação e comportamento de compra. |
-| dProdutos | Contém os atributos dos produtos, permitindo análises por produto, marca e custo. |
-| dCanal | Dimensão criada a partir dos canais de venda presentes na tabela fato, permitindo análises por canal de comercialização. |
-| dVendedor | Armazena informações dos vendedores e equipes comerciais, separando atributos descritivos da tabela fato. |
-| dCalendario | Suporta análises temporais por dia, mês e ano, seguindo boas práticas de modelagem dimensional. |
+| Dimensão | Origem | Finalidade |
+|---|---|---|
+| dClientes | Já disponível na base | Atributos cadastrais dos clientes, para análises de segmentação e comportamento de compra |
+| dProdutos | Já disponível na base | Atributos dos produtos, para análises por produto, marca e custo |
+| dCanal | **Criada por mim no Power Query** | Normaliza os canais de venda que estavam na tabela fato |
+| dVendedor | **Criada por mim no Power Query** | Separa os dados descritivos de vendedores e equipes da tabela fato |
+| dCalendario | **Script DAX fornecido pelo professor** | Suporta análises por dia, mês e ano, com ordenação cronológica correta |
 
+---
 
 ##  📌 Destaques da Modelagem
     
 ### dCanal
 
-Dimensão criada a partir da tabela de vendas para normalizar os canais de comercialização e facilitar análises por canal de venda.
+Criada como tabela de referência a partir da fVendas, mantendo apenas o campo `canal`, para normalizar os canais de comercialização e permitir análises por canal.
+
+> Observação: o ideal em uma dimensão é ter uma chave identificadora (código/id). Como os canais não possuem código, o próprio campo `canal` foi usado como chave do relacionamento com a fVendas.
 
 ### dVendedor
 
-Dimensão criada a partir da tabela fato contendo informações dos vendedores e equipes comerciais.
-
-Após a criação da dimensão:
-
-- Foram mantidos apenas os atributos necessários para identificação do vendedor;
-- Os campos descritivos foram removidos da tabela fato para evitar redundância de dados.
+Criada a partir de uma nova importação da fVendas, renomeada para dVendedor, mantendo apenas os campos `id_vendedor`, `vendedor_nome` e `equipe_vendas`. Foram removidas as duplicatas por `id_vendedor`, para que cada vendedor apareça uma única vez e o relacionamento 1:N funcione.
 
 ### dCalendario
 
 Dimensão temporal criada para suportar análises por período.
 
-Foi realizada a classificação da coluna **Mês Abreviado** pela coluna **Número do Mês**, garantindo a ordenação cronológica correta nas visualizações.
+Criada a partir de script DAX disponibilizado pelo professor, para suportar análises por período. A coluna **Mes Abrev** foi classificada pela coluna **Mes num**, garantindo a ordenação cronológica correta nas visualizações.
+
+---
+
+## 🔗 Relacionamentos
+
+| Dimensão | Chave na dimensão | Chave na fVendas | Cardinalidade | Direção do filtro |
+|---|---|---|---|---|
+| dCalendario | Date | data_venda | 1:N | Única |
+| dClientes | id_cliente | id_cliente | 1:N | Única |
+| dProdutos | id_produto | id_produto | 1:N | Única |
+| dCanal | canal | canal | 1:N | Única |
+| dVendedor | id_vendedor | id_vendedor | 1:N | Única |
+
+---
 
 ## 🔄 Etapas Realizadas
 
-### Importação dos Dados
+1. **Importação** da base disponibilizada para o desafio
+2. **Classificação das tabelas** em fato e dimensões
+3. **Criação das dimensões**: dCanal e dVendedor no Power Query; dCalendario a partir do script DAX disponibilizado pelo professor
+4. **Organização dos atributos descritivos** em dimensões separadas da tabela fato
+5. **Configuração e validação dos relacionamentos** entre a fato e as dimensões
 
-- Importação da base disponibilizada para o desafio;
-- Identificação das tabelas e atributos necessários para modelagem.
+## 💡 O que o modelo permite analisar
 
-### Classificação das Tabelas
+- Vendas por canal e por vendedor
+- Vendas por cliente e por produto
+- Evolução mensal e anual, com ordenação cronológica correta
 
-- Identificação da tabela fato;
-- Identificação das tabelas dimensão;
-- Organização da estrutura analítica.
-
-### Criação das Dimensões
-
-Foram criadas as seguintes tabelas dimensão:
-
-- dCanal;
-- dVendedor;
-- dCalendario.
-
-### Normalização dos Dados
-
-- Separação dos atributos descritivos da tabela fato;
-- Redução de redundâncias;
-- Organização do modelo para melhor desempenho analítico.
-
-### Configuração dos Relacionamentos
-
-Foram criados e validados os relacionamentos entre a tabela fato e as tabelas dimensão, garantindo:
-
-- Integridade dos dados;
-- Correta propagação dos filtros;
-- Consistência das análises.
-
-## 📸 Modelo Dimensional
-
-A imagem abaixo apresenta a estrutura final do modelo dimensional criado no Power BI.
-
-![Modelo Dimensional](./modelo-relacionamentos.jpg)
-
-## 🚀 Competências Demonstradas
-
-- Modelagem Dimensional;
-- Star Schema (Modelo Estrela);
-- Criação de Tabelas Fato e Dimensão;
-- Construção de Relacionamentos;
-- Normalização de Dados;
-- Organização de Modelos Analíticos;
-- Criação de Tabela Calendário;
-- Boas Práticas em Power BI;
-- Preparação de Bases para Dashboards.
 
 
 ## 👩‍💻 Autora
 
 **Silvana Campos**
 
-Desafio técnico desenvolvido durante a Formação de Analista de Dados da Educadados, compondo meu portfólio de projetos em Power BI, Power Query, Modelagem de Dados, DAX e Business Intelligence.
+Desafio técnico daFormação de Analista de Dados da Educadados, parte do meu portfólio de projetos em Power BI, Power Query, Modelagem de Dados, DAX.
 
-🔗 Repositório Principal:  
+🔗 Repositório Principal:
 https://github.com/SilvanaCampos/portfolio-powerbi-educadados
 
