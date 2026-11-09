@@ -69,8 +69,6 @@ Criada a partir de uma nova importação da fVendas, renomeada para dVendedor, m
 
 ### dCalendario
 
-Dimensão temporal criada para suportar análises por período.
-
 Criada a partir de script DAX disponibilizado pelo professor, para suportar análises por período. A coluna **Mes Abrev** foi classificada pela coluna **Mes num**, garantindo a ordenação cronológica correta nas visualizações.
 
 ---
