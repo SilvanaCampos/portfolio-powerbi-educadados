@@ -13,7 +13,7 @@ A solução envolveu padronização de bases, tratamento de inconsistências, en
 
 Prepara e consolidar diferentes fontes de dados em uma estrutura analítica consistente, aplicando recursos fundamentais do Power Query para tratamento, integração e organização dos dados.
 
-## 🛠️ Tecnologias Utilizadas 
+## 🛠️ Tecnologias
 
 - Power BI Desktop
 - Power Query
