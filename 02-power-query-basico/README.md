@@ -19,7 +19,7 @@ Prepara e consolidar diferentes fontes de dados em uma estrutura analítica cons
 - Power Query
 - Microsoft Excel
 
-## 📁 Arquivos do Repositório
+## 📁 Arquivos
 
 | Arquivo | Descrição |
 |----------|----------|
