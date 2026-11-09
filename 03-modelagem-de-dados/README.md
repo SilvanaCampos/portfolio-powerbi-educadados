@@ -11,7 +11,7 @@ Desafio técnico desenvolvido durante o **Módulo 03 - Modelagem de Dados** da F
 
 ## 🛠️ Tecnologias
 
--Power BI Desktop
+- Power BI Desktop
 - Power Query
 - DAX
 - Modelagem Dimensional
