@@ -102,12 +102,13 @@ Criada a partir de script DAX disponibilizado pelo professor, para suportar aná
 - Evolução mensal e anual, com ordenação cronológica correta
 
 
-
 ## 👩‍💻 Autora
 
 **Silvana Campos**
 
 Desafio técnico daFormação de Analista de Dados da Educadados, parte do meu portfólio de projetos em Power BI, Power Query, Modelagem de Dados, DAX.
+
+---
 
 🔗 Repositório Principal:
 https://github.com/SilvanaCampos/portfolio-powerbi-educadados
