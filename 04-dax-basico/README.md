@@ -39,7 +39,7 @@ As medidas ficam organizadas em uma tabela própria, **Medidas**, separadas por 
 
 ## 🖥️ Painel de Acompanhamento
 
-![Painel](.imagens/dashboard.jpg)
+![Painel](./imagens/dashboard.jpg)
 
 ---
 
@@ -84,13 +84,64 @@ Faturamento total e ticket médio reavaliados com filtros:
 |---|---|---|
 | Uma única região (Sudeste) | 23.628,23 | ≈ 1.817,56 (painel: 1,82 mil) |
 | Um único produto (AWS) | 67.485,46 | ≈ 4.217,84 (painel: 4,22 mil) |
-| Ano de 2024 | 613.930,74 | ≈ 1.918,53 (painel: 1,92 mil) |
+| Faturamento 2024 | 613.930,74 | ≈ 1.918,53 (painel: 1,92 mil) |
 
 **Filtro por região (Sudeste)**
 
-![Filtro por região - Sudeste](.imagens/filtro-regiao-sudeste.png)
+![Filtro por região - Sudeste](./imagens/filtro-regiao-sudeste.jpg)
 
 **Filtro por produto (AWS)**
 
-![Filtro por produto - AWS](.imagens/filtro-produto-aws.png)
+![Filtro por produto - AWS](./imagens/filtro-produto-aws.jpg)
+
+> **Observação:**  A medida **"Faturamento 2024"** ignora os filtros de **Ano** e **Mês** da página, mantendo sempre os valores de 2024. Os filtros de **Região** e **Produto** permanecem ativos, conforme demonstrado na figura, na qual o filtro **Sudeste** resulta em um faturamento de **5 mil**.
+
+### Parte 5 - BLANK
+
+Filtro aplicado: **fevereiro de 2025**. Sem vendas no período, os cartões de valor ficam vazios, o ticket médio retorna 0,00 e o indicador mostra "Sem Vendas".
+
+![Filtro fev/2025](./imagens/filtro-fev-2025.jpg)
+
+- **Faturamento:** retornou vazio (BLANK), pois não há vendas nesse mês
+- **Ticket médio:** retornou vazio (BLANK) antes do ajuste [CONFIRMAR]
+- **Ajuste:** o ticket médio foi ajustado para retornar 0 quando não há vendas. Medida: `Ticket Médio = DIVIDE([Faturamento Total], [Total de Vendas], 0) + 0`. Em fev/2025 o painel mostra 0,00.
+
+### Parte 6 - IF
+
+**Classificação do faturamento:** Alto (a partir de 50.000) e Normal (abaixo disso). Quando não há faturamento, a medida retorna vazio.
+
+```dax
+Classificação Faturamento =
+IF(
+    [Faturamento Total] > 0,
+    IF([Faturamento Total] >= 50000, "Alto", "Normal"),
+    BLANK()
+)
+```
+
+**Indicador de venda no período:** mostra "Houve Venda" ou "Sem Vendas", conforme o período selecionado.
+
+```dax
+Indicador de Venda =
+IF(
+    COUNTROWS(Vendas_Desafio_DAX_Basico) > 0,
+    "Houve Venda",
+    "Sem Vendas"
+)
+```
+
+💡 O que aprendi neste módulo
+- Criar medidas de agregação, contagem e divisão em DAX
+- Como o contexto de filtro altera o resultado de uma mesma medida
+- O que acontece quando não há dados no período (BLANK) e como tratar esse caso
+- Criar classificações e indicadores com lógica condicional
+
+---
+
+## 👩‍💻 Autora
+
+**Silvana Campos**
+
+Desafio técnico da Formação de Analista de Dados da Educadados, parte do meu portfólio em Power BI, Power Query, Modelagem de Dados e DAX.
+
 
