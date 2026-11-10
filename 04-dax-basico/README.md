@@ -16,7 +16,7 @@ Desafio técnico do **Módulo 04 - DAX Básico** da Formação de Analista de Da
 - DAX
 - Modelagem de Dados
   
-# 📁 Arquivos
+## 📁 Arquivos
 
 | Arquivo | Descrição |
 |---|---|
@@ -84,7 +84,7 @@ Faturamento total e ticket médio reavaliados com filtros:
 |---|---|---|
 | Uma única região (Sudeste) | 23.628,23 | ≈ 1.817,56 (painel: 1,82 mil) |
 | Um único produto (AWS) | 67.485,46 | ≈ 4.217,84 (painel: 4,22 mil) |
-| Faturamento 2024 | 613.930,74 | ≈ 1.918,53 (painel: 1,92 mil) |
+| Ano de 2024 | 613.930,74 | ≈ 1.918,53 (painel: 1,92 mil) |
 
 **Filtro por região (Sudeste)**
 
@@ -94,7 +94,7 @@ Faturamento total e ticket médio reavaliados com filtros:
 
 ![Filtro por produto - AWS](./imagens/filtro-produto-aws.jpg)
 
-> **Observação:**  A medida **"Faturamento 2024"** ignora os filtros de **Ano** e **Mês** da página, mantendo sempre os valores de 2024. Os filtros de **Região** e **Produto** permanecem ativos, conforme demonstrado na figura, na qual o filtro **Sudeste** resulta em um faturamento de **5 mil**.
+> **Observação:** A medida **"Faturamento 2024"** ignora os filtros de **Ano** e **Mês** da página, mantendo sempre os valores de 2024. Os filtros de **Região** e **Produto** permanecem ativos, conforme demonstrado na primeira imagem acima, na qual o filtro **Sudeste** faz o cartão **"Faturamento 2024** mostrar **5 mil**.
 
 ### Parte 5 - BLANK
 
@@ -130,7 +130,7 @@ IF(
 )
 ```
 
-💡 O que aprendi neste módulo
+## 💡 O que aprendi neste módulo
 - Criar medidas de agregação, contagem e divisão em DAX
 - Como o contexto de filtro altera o resultado de uma mesma medida
 - O que acontece quando não há dados no período (BLANK) e como tratar esse caso
