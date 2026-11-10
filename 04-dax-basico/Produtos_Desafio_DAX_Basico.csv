@@ -1,0 +1,31 @@
+﻿id_produto,nome_produto,categoria,nivel,marca,preco_base
+1,Power BI,Workshop,Intermediário,CloudSkills,448.74
+2,Excel,Workshop,Intermediário,BI Academy,1248.14
+3,Python,Curso,Iniciante,CloudSkills,301.7
+4,SQL,Curso,Intermediário,TechPro,452.72
+5,Databricks,Workshop,Iniciante,CloudSkills,1477.82
+6,AWS,Formação,Avançado,EduData,1378.96
+7,GCP,Curso,Intermediário,DataLab,1282.04
+8,BigQuery,Curso,Intermediário,BI Academy,818.44
+9,Tableau,Workshop,Intermediário,CloudSkills,309.77
+10,DAX,Curso,Avançado,DataLab,718.8
+11,Snowflake,Curso,Iniciante,DataLab,418.0
+12,Data Warehouse,Formação,Avançado,DataLab,965.06
+13,Linguagem R,Workshop,Intermediário,BI Academy,992.05
+14,Airflow,Workshop,Iniciante,EduData,399.69
+15,Kafka,Workshop,Avançado,EduData,215.52
+16,Spark,Curso,Intermediário,DataLab,881.56
+17,Docker,Curso,Iniciante,BI Academy,1271.0
+18,Git/GitHub,Workshop,Iniciante,TechPro,473.61
+19,Modelagem de Dados,Workshop,Intermediário,DataLab,620.79
+20,Engenharia de Dados,Workshop,Intermediário,CloudSkills,276.18
+21,MLOps,Workshop,Intermediário,TechPro,1058.22
+22,Lakehouse,Curso,Avançado,TechPro,366.99
+23,Microsoft Fabric,Formação,Iniciante,TechPro,221.32
+24,Azure,Curso,Iniciante,DataLab,202.11
+25,Looker Studio,Workshop,Iniciante,TechPro,812.54
+26,PostgreSQL,Workshop,Avançado,TechPro,277.28
+27,MySQL,Curso,Avançado,EduData,919.07
+28,MongoDB,Formação,Iniciante,EduData,520.04
+29,Data Quality,Workshop,Iniciante,EduData,857.03
+30,Governança de Dados,Workshop,Avançado,TechPro,773.22

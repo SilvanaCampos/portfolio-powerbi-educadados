@@ -1,0 +1,61 @@
+﻿id_cliente,nome_cliente,uf,cidade,regiao
+1,Eduarda Rodrigues,SC,Florianópolis,Sul
+2,Samuel Souza,RJ,Petrópolis,Sudeste
+3,Bruno Melo,CE,Caucaia,Nordeste
+4,Carla Martins,SP,Sorocaba,Sudeste
+5,Henrique Oliveira,RJ,Volta Redonda,Sudeste
+6,Tatiane Souza,SP,Campinas,Sudeste
+7,Tatiane Santos,DF,Samambaia,Centro-Oeste
+8,Henrique Santos,SP,Campinas,Sudeste
+9,Nathan Lima,PR,Curitiba,Sul
+10,João Campos,CE,Caucaia,Nordeste
+11,Tatiane Cardoso,RJ,Niterói,Sudeste
+12,Diego Campos,SC,Florianópolis,Sul
+13,Bruno Teixeira,CE,Caucaia,Nordeste
+14,Samuel Martins,BA,Vitória da Conquista,Nordeste
+15,Tatiane Araújo,BA,Vitória da Conquista,Nordeste
+16,Henrique Pereira,PR,Londrina,Sul
+17,Tatiane Almeida,RJ,Volta Redonda,Sudeste
+18,Olivia Almeida,SC,Florianópolis,Sul
+19,Rafaela Martins,RJ,Niterói,Sudeste
+20,Eduarda Barbosa,SC,Chapecó,Sul
+21,Carla Campos,SP,Santos,Sudeste
+22,Lucas Teixeira,SC,Chapecó,Sul
+23,Olivia Oliveira,CE,Fortaleza,Nordeste
+24,Paulo Oliveira,PR,Curitiba,Sul
+25,Tatiane Araújo,PR,Maringá,Sul
+26,Lucas Silva,RS,Canoas,Sul
+27,Felipe Teixeira,SC,Florianópolis,Sul
+28,Bruno Carvalho,BA,Vitória da Conquista,Nordeste
+29,Henrique Rodrigues,MG,Contagem,Sudeste
+30,Carla Pereira,BA,Ilhéus,Nordeste
+31,Samuel Ribeiro,RS,Caxias do Sul,Sul
+32,Samuel Ribeiro,RS,Canoas,Sul
+33,Mariana Gomes,SC,Joinville,Sul
+34,Felipe Lima,RJ,Niterói,Sudeste
+35,Henrique Silva,DF,Samambaia,Centro-Oeste
+36,Felipe Ribeiro,CE,Juazeiro do Norte,Nordeste
+37,Eduarda Martins,SP,Santos,Sudeste
+38,Tatiane Costa,CE,Caucaia,Nordeste
+39,Vinícius Santos,PE,Jaboatão,Nordeste
+40,Samuel Rodrigues,DF,Samambaia,Centro-Oeste
+41,Mariana Souza,RS,Canoas,Sul
+42,Mariana Santos,DF,Taguatinga,Centro-Oeste
+43,Gabriela Araújo,RJ,Niterói,Sudeste
+44,Karen Teixeira,RJ,Rio de Janeiro,Sudeste
+45,Ana Cardoso,RJ,Niterói,Sudeste
+46,Diego Ferreira,PE,Recife,Nordeste
+47,Gabriela Teixeira,RJ,Volta Redonda,Sudeste
+48,Isabela Ferreira,MG,Juiz de Fora,Sudeste
+49,Diego Souza,BA,Ilhéus,Nordeste
+50,Paulo Barbosa,BA,Vitória da Conquista,Nordeste
+51,Eduarda Souza,RJ,Petrópolis,Sudeste
+52,Paulo Pereira,PR,Curitiba,Sul
+53,Rafaela Ferreira,ES,Vila Velha,Sudeste
+54,Ana Melo,PE,Caruaru,Nordeste
+55,Carla Ribeiro,DF,Ceilândia,Centro-Oeste
+56,Lucas Gomes,MG,Juiz de Fora,Sudeste
+57,Henrique Teixeira,DF,Taguatinga,Centro-Oeste
+58,Mariana Gomes,ES,Vila Velha,Sudeste
+59,Paulo Ferreira,PE,Recife,Nordeste
+60,Isabela Barbosa,SP,Santos,Sudeste
