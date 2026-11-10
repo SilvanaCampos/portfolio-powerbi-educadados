@@ -32,8 +32,7 @@ Portfólio de estudos, exercícios, desafios e projetos desenvolvidos durante a 
 
 ✅ DAX Básico
 
-🚧 DAX Intermediário
-
+<!-- DAX Intermediário--> 
 <table>
 <tr>
 <td align="center">
@@ -69,7 +68,7 @@ DAX Básico
 
 </tr>
 
-<tr>
+<!--- <tr>
 <td align="center">
 <! <a href="./05-dax-intermediario/README.md">
 <img src="./assets/modulo-05-dax-intermediario.png" width="160"><br>
