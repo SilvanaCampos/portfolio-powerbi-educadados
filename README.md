@@ -64,7 +64,7 @@ Modelagem de Dados
 
 <tr>
 <td align="center">
-<! <a href="./04-dax-basico/README.md">
+<a href="./04-dax-basico/README.md">
 <img src="./assets/modulo-04-dax-basico.png" width="220"><br>
 <b>Módulo 04</b><br>
 DAX Básico
