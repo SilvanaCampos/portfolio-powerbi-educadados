@@ -144,4 +144,8 @@ IF(
 
 Desafio técnico da Formação de Analista de Dados da Educadados, parte do meu portfólio em Power BI, Power Query, Modelagem de Dados e DAX.
 
+---
+
+🔗 Repositório Principal:
+https://github.com/SilvanaCampos/portfolio-powerbi-educadados
 
