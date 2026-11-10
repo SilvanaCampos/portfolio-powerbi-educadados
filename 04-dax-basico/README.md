@@ -103,7 +103,7 @@ Filtro aplicado: **fevereiro de 2025**. Sem vendas no período, os cartões de v
 ![Filtro fev/2025](./imagens/filtro-fev-2025.jpg)
 
 - **Faturamento:** retornou vazio (BLANK), pois não há vendas nesse mês
-- **Ticket médio:** retornou vazio (BLANK) antes do ajuste [CONFIRMAR]
+- **Ticket médio:** retornou vazio (BLANK) antes do ajuste.
 - **Ajuste:** o ticket médio foi ajustado para retornar 0 quando não há vendas. Medida: `Ticket Médio = DIVIDE([Faturamento Total], [Total de Vendas], 0) + 0`. Em fev/2025 o painel mostra 0,00.
 
 ### Parte 6 - IF
