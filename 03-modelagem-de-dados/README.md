@@ -7,6 +7,7 @@ Desafio técnico desenvolvido durante o **Módulo 03 - Modelagem de Dados** da F
 
 **Objetivo:** transformar uma base transacional de clientes, produtos e vendas em um modelo dimensional (Star Schema) pronto para análises e dashboards no Power BI.
 
+O escopo e a base de dados foram definidos pelo curso. A construção do modelo, a criação das dimensões dCanal e dVendedor e a configuração e validação dos relacionamentos.
 
 
 ## 🛠️ Tecnologias
@@ -65,7 +66,7 @@ Criada como tabela de referência a partir da fVendas, mantendo apenas o campo `
 
 ### dVendedor
 
-Criada a partir de uma nova importação da fVendas, renomeada para dVendedor, mantendo apenas os campos `id_vendedor`, `vendedor_nome` e `equipe_vendas`. Foram removidas as duplicatas por `id_vendedor`, para que cada vendedor apareça uma única vez e o relacionamento 1:N funcione.
+Criada a partir de uma nova importação da fVendas, renomeada para dVendedor, mantendo apenas os campos `id_vendedor`, `vendedor_nome` e `equipe_vendas`. Foram removidas as duplicatas por `id_vendedor`, para que cada vendedor apareça uma única vez e o relacionamento 1:N funcione. Na fVendas, os campos descritivos foram removidos, mantendo apenas `id_vendedor´ como chave de ligação.
 
 ### dCalendario
 
