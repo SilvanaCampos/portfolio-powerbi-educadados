@@ -10,9 +10,8 @@ Portfólio de estudos, exercícios, desafios e projetos desenvolvidos durante a 
 - ETL
 - Modelagem de Dados
 - DAX Básico
-- DAX Intermediário
-- Business Intelligence
-- Visualização de Dados
+
+<!DAX Intermediário - Business Intelligence - Visualização de Dados>
 
 ### 📈 Conceitos Analíticos
 
